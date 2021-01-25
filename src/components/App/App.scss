@@ -1,0 +1,43 @@
+// $body-background-color: #084AA4;
+// $body-background-color-secondary: #FAFBFD;
+// $body-background-color-accent: #F3F5F9;
+// $font-color: #3C4351;
+
+// $button-primary: $body-background-color;
+// $button-success: #00D57F;
+
+$border-radius: 5px;
+$padding-width: 20px;
+@import "../../themeColors.scss";
+
+:root {
+  --default-padding: #{$padding-width};
+  --body-background-color-secondary: #{$body-background-color-secondary};
+  --body-background-color-accent: #{$body-background-color-accent};
+  --font-color: #{$font-color};
+  --button-primary: #{$button-primary};
+  --button-success: #{$button-success};
+}
+
+html, body {
+  display: flex;
+  flex: 1;
+  color: $font-color;
+  height: 100%;
+  background-color: $body-background-color;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 3rem;
+}
+
+.match-area {
+  display: flex;
+  height: 100%;
+  border: 1px solid $body-background-color-accent;
+  border-radius: $border-radius;
+}

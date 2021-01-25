@@ -1,0 +1,27 @@
+@import "../../themeColors.scss";
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  .inputField__label {
+    font-size: 1.25rem;
+    color: $font-color;
+    padding-bottom: 1rem;
+  }
+  
+  .inputField__input {
+    border-color: $body-background-color-secondary;
+    background: $body-background-color-secondary;
+    height: 2rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: .25rem;
+    color: $font-color;
+    border: 1px solid $body-background-color-secondary;
+  }
+}
+

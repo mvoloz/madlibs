@@ -1,0 +1,40 @@
+@import "../../themeColors.scss";
+$darken-amount: 5;
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 5rem;
+  min-height: 2rem;
+  cursor: pointer;
+  color: $font-color-secondary;
+  box-sizing: content-box;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
+  &.button--primary  {
+    background-color: $button-primary;
+    border-color: $button-primary;
+
+    &:hover {
+      background-color: darken($button-primary, $darken-amount);
+      border-color: darken($button-primary, $darken-amount);
+    }
+  }
+  &.button--success {
+    background-color: $button-success;
+    border-color: $button-success;
+
+    &:hover {
+      background-color: darken($button-success, $darken-amount);
+      border-color: darken($button-success, $darken-amount);
+    }
+  }
+
+}

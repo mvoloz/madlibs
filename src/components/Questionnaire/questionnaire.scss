@@ -1,0 +1,9 @@
+@import "../../themeColors.scss";
+
+.questionnaire {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: $body-background-color-accent;
+  padding: var(--default-padding);
+}
