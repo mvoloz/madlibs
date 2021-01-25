@@ -15,3 +15,8 @@ There was 1 item in the spec that I thought could improve the user experience wi
 When the user writes in their own essay and then removes a field, original spec would overwrite that `essayText` with the randomly generated one, my update keeps it in place and shows a button to generate randomized text.  To enable that feature toggle, set the env variable `REACT_APP_FEATURE_ESSAY_REGEN: true`
 
 If time was not a constraint, would have added the proper accessibility tags along with proper responsive styling, currently only desktop is supported.
+
+## libraries i've added
+ - reselect - 2.1K (gzipped: 956)
+ - html-react-parser 21K (gzipped: 7.8K)
+ - lodash.debounce 2.7K (gzipped 1.2K)
